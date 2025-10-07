@@ -1,6 +1,6 @@
-'use client'
+// lib/supabaseClient.ts
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
-import type { SupabaseClient } from '@supabase/supabase-js'
 
-export const supabase = () => createClientComponentClient()
-export type { SupabaseClient }
+export function supabase() {
+  return createClientComponentClient()
+}
